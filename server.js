@@ -52,7 +52,7 @@ db.collection('bookings').onSnapshot(
                 try {
                     // Send email to the user
                     const { data, error } = await resend.emails.send({
-                        from: 'Acme <onboarding@resend.dev>',
+                        from: 'Fusshn <tickets@fusshn.in>',
                         to: [userEmail],
                         subject: 'Booking Confirmation',
                         html: `<strong>Your booking has been confirmed!</strong><br/>Details: ${JSON.stringify(newBooking)}`,
